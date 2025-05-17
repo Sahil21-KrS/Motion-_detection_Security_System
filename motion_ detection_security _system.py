@@ -37,8 +37,8 @@ def beep_alarm():
 
         server=smtplib.SMTP('smtp.gmail.com',587)
         server.starttls()
-        server.login('singhksahil90@gmail.com','nuih yikc amal kjfm')
-        server.sendmail('singhksahil90@gmail.com','sahilkumarsingh03092001@gmail.com','Motion is detected')
+        server.login('Recipient Email address','Password')
+        server.sendmail('Recipient Email Address','Sender Email Address','Motion is detected')
         print('Message sent successfully')
         
         # Call detect_objects function
@@ -97,9 +97,9 @@ def detect_objects(image):
     send_email(detected_objects, frame)
 
 def send_email(detected_objects, frame):
-    sender_email = "singhksahil90@gmail.com"
-    receiver_email = "sahilkumarsingh03092001@gmail.com"
-    password = "nuih yikc amal kjfm"
+    sender_email = "**********"
+    receiver_email = "**********"
+    password = "****************"
 
     subject = "Detected Object"
     body = "Detected object(s):"
